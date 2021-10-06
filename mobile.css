@@ -1,0 +1,66 @@
+.logo img {
+    width: 100px;
+    animation: move 20s linear infinite;
+}
+@keyframes move{
+    10%{
+        width:110px ;
+            transform: rotate3d(1, 1, 1, 
+-0deg);
+    }
+    30%{
+        width:120px ;
+            transform: rotate3d(1, 1, 1, 
+-180deg);
+    }
+    60%{
+        width:110px ;
+              transform: rotate3d(1, 1, 1, 
+-360deg);
+    }
+   90%{
+        width:90px ;
+        transform: rotate3d(1, 1, 1, 
+-180deg);
+
+    }
+   100%{
+        width:110px ;
+        transform: rotate3d(1, 1, 1, 
+-0deg);
+}
+}
+.menuItems ul li a {
+    font-size: 14px;
+}
+li.cartItem a img {
+    width: 25px;
+}
+.menuItems ul li {
+    padding-left: 30px;
+}
+.intro h4 {
+    font-size: 30px;
+}
+.intro h1 {
+    font-size: 110px;
+    margin: -35px 0 -40px -5px;
+}
+.intro h5 {
+    font-size: 32px;
+}
+.buttons p {
+    width: 290px;
+    font-size: 13px;
+}
+.buttons a {
+    padding: 6px 6px;
+    margin-right: 20px;
+    font-size: 13px;
+}
+.intro {
+    margin-top: 370px;
+}
+.intro-right i {
+    font-size: 20px;
+}
