@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(images/PicsArt_10-06-12.47.38.jpg)no-repeat center top /cover;
+    height: 100vh;
+    padding: 0 90px;
+}
+
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo img {
+    width: 150px;
+    animation: move 20s linear infinite;
+}
+
+@keyframes move{
+    10%{
+        width:180px ;
+            transform: rotate3d(1, 1, 1, 
+-0deg);
+    }
+    30%{
+        width:200px ;
+            transform: rotate3d(1, 1, 1, 
+-180deg);
+    }
+    60%{
+        width:180px ;
+              transform: rotate3d(1, 1, 1, 
+-360deg);
+    }
+   90%{
+        width:150px ;
+        transform: rotate3d(1, 1, 1, 
+-180deg);
+
+    }
+   100%{
+        width:180px ;
+        transform: rotate3d(1, 1, 1, 
+-0deg);
+}
+}
+.menuItems ul {
+    display: flex;
+    align-items: center;
+}
+
+.menuItems ul li {
+    padding-left: 60px;
+}
+
+.menuItems ul li a {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+.menuItems ul li a:hover {
+    text-shadow: 0px 0px 2px;
+    transition: .4s;
+}
+li.cartItem a img {
+    width: 35px;
+}
+
+.intro h4 {
+    font-size: 45px;
+    color: white;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 3px white;
+}
+
+.intro h1 {
+    letter-spacing: 4px;
+    font-size: 190px;
+    color: transparent;
+    background: url(images/back.png);
+    -webkit-text-stroke: 1px white;
+      margin: -60px 0 -65px -10px;
+      -webkit-background-clip: text;
+      background-position: 0 0;
+      animation: run 20s linear infinite;
+      
+}
+
+@keyframes run{
+    100%{
+        background-position:2000px 0;
+    }
+}
+
+.intro h5 {
+    font-size: 45px;
+    content: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.buttons a {
+    padding: 6px 15px;
+    color: white;
+    margin-right: 20px;
+    border: 2px solid;
+    font-size: 20px;
+    background: linear-gradient(
+45deg, #709cc3, transparent);
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 230px;
+}
+
+.intro-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.intro-right i {
+    margin-top: 30px;
+    font-size: 25px;
+    color: white;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.buttons p {
+    color: white;
+    width: 410px;
+    font-size: 18px;
+}
+.logo img {
+    transform: rotate3d(1, 1, 1, -22deg);
+    transition: .5s;
+}
+.logo img:Hover {
+    transform: rotate3d(0, 0, 0, -22deg);
+    transition: .5s;
+}
+.menuItems ul li a {
+    position: relative;
+}
+
+.menuItems ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: white;
+    position: absolute;
+    top: 38px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menuItems ul li a:hover::after {
+    width: 50%;
+    transition: .4s
+}
+.intro-right i:hover {
+    color: #fbff00;
+    transform: rotate(360deg);
+    transition: 1s;
+}
+li.cartItem a img:hover{
+   transform: rotate(360deg);
+    transition: 1s;
+}
